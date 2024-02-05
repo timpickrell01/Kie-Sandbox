@@ -56,6 +56,9 @@
   <dmn:decision id="_F389FF2A-0281-495B-98B5-910BF05E2130" name="Tax and insurance payment">
     <dmn:extensionElements/>
     <dmn:variable id="_E51FF8C9-73F6-4E21-A6B3-5CFC844304B2" name="Tax and insurance payment"/>
+    <dmn:informationRequirement id="_EA30D857-49C8-4044-80F3-6346F4217902">
+      <dmn:requiredInput href="#_02A1D94A-F81D-4918-8D7D-92443997B7E7"/>
+    </dmn:informationRequirement>
   </dmn:decision>
   <dmn:decision id="_BEF1DA27-93AA-46E5-A187-BC504F75E7B2" name="Loan payment">
     <dmn:extensionElements/>
@@ -84,6 +87,9 @@
     <dmn:variable id="_BF195CC9-BAB3-479A-BF69-37DDC563012E" name="Loan amount"/>
     <dmn:informationRequirement id="_E9A6ECF4-119E-41BB-B850-A74B298E7910">
       <dmn:requiredInput href="#_02A1D94A-F81D-4918-8D7D-92443997B7E7"/>
+    </dmn:informationRequirement>
+    <dmn:informationRequirement id="_F4CEB5FC-BAF8-473C-99C7-6897E831A0EB">
+      <dmn:requiredInput href="#_9BCCBC86-79E9-45CD-8978-FCEA7F9CDCEC"/>
     </dmn:informationRequirement>
   </dmn:decision>
   <dmn:inputData id="_D598ED60-FE52-4097-9E6F-DA0E67BE179E" name="Loan rate pct">
@@ -269,6 +275,10 @@
         <di:waypoint x="746" y="478"/>
         <di:waypoint x="856" y="402"/>
       </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_EA30D857-49C8-4044-80F3-6346F4217902" dmnElementRef="_EA30D857-49C8-4044-80F3-6346F4217902">
+        <di:waypoint x="744.5981308411215" y="602.3421052631579"/>
+        <di:waypoint x="746" y="503"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_A8574A85-FCCE-4347-99FD-E0D394D386BE" dmnElementRef="_A8574A85-FCCE-4347-99FD-E0D394D386BE">
         <di:waypoint x="966" y="602.0590984057175"/>
         <di:waypoint x="966" y="503"/>
@@ -284,6 +294,10 @@
       <dmndi:DMNEdge id="dmnedge-drg-_E9A6ECF4-119E-41BB-B850-A74B298E7910" dmnElementRef="_E9A6ECF4-119E-41BB-B850-A74B298E7910">
         <di:waypoint x="744.5981308411215" y="602.3421052631579"/>
         <di:waypoint x="916" y="602.0590984057175"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_F4CEB5FC-BAF8-473C-99C7-6897E831A0EB" dmnElementRef="_F4CEB5FC-BAF8-473C-99C7-6897E831A0EB">
+        <di:waypoint x="960" y="705.0314763247843"/>
+        <di:waypoint x="966" y="627.0590984057175"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
